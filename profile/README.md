@@ -1,5 +1,5 @@
 Kiến trúc microservice là một phương pháp thiết kế phần mềm trong đó ứng dụng được cấu trúc dưới dạng một tập hợp các dịch vụ nhỏ, độc lập. Mỗi dịch vụ này thực hiện một chức năng kinh doanh cụ thể và có thể được phát triển, triển khai, vận hành và mở rộng một cách độc lập. Đối với một ứng dụng tương tự Grab, chúng ta cần xem xét các dịch vụ chính sau đây:
-
+![system-design by shyamzzp](https://raw.githubusercontent.com/shyamzzp/interview/main/docs/system-design/_img/uber/2022-06-25-15-29-30.png)
 ### 1. Thiết kế kiến trúc tổng quan
 
 Trước khi đi vào chi tiết, cần xác định một số thành phần chính của ứng dụng như sau:
