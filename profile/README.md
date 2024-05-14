@@ -1,5 +1,23 @@
 Kiến trúc microservice là một phương pháp thiết kế phần mềm trong đó ứng dụng được cấu trúc dưới dạng một tập hợp các dịch vụ nhỏ, độc lập. Mỗi dịch vụ này thực hiện một chức năng kinh doanh cụ thể và có thể được phát triển, triển khai, vận hành và mở rộng một cách độc lập. Đối với một ứng dụng tương tự Grab, chúng ta cần xem xét các dịch vụ chính sau đây:
+
 ![system-design by shyamzzp](https://raw.githubusercontent.com/shyamzzp/interview/main/docs/system-design/_img/uber/2022-06-25-15-29-30.png)
+
+Quy trình làm việc (workflow) mô tả ở đây liên quan đến việc kết nối giữa hành khách và tài xế thông qua một dịch vụ gọi xe. Dưới đây là diễn giải chi tiết của quá trình này:
+
+1. **Bob gửi yêu cầu đi xe**: Bob, người dùng dịch vụ, gửi yêu cầu đi xe đến Dịch vụ Ghép Đôi (Ride Matching service). Bob mong muốn tìm được một tài xế phù hợp để thực hiện chuyến đi.
+
+2. **Dịch vụ Ghép Đôi liên lạc với Dịch vụ Định Vị**: Sau khi nhận được yêu cầu từ Bob, Dịch vụ Ghép Đôi sẽ liên hệ với Dịch vụ Định Vị để tìm kiếm tất cả các tài xế đang có mặt và sẵn sàng trong cùng khu vực.
+
+3. **Xếp hạng và lọc tài xế**: Dịch vụ Ghép Đôi sẽ thực hiện các bước xếp hạng và lọc để chọn ra những tài xế phù hợp nhất với yêu cầu của Bob. Các tiêu chí có thể bao gồm vị trí của tài xế, đánh giá của tài xế, loại xe, và các yếu tố khác.
+
+4. **Gửi thông báo đến tài xế**: Sau khi đã lọc và chọn được các tài xế phù hợp, Dịch vụ Ghép Đôi sẽ sử dụng Dịch vụ Thông Báo để gửi yêu cầu đi xe đến các tài xế đã chọn. Tài xế có thể chọn chấp nhận hoặc từ chối yêu cầu này.
+
+5. **Xử lý yêu cầu của tài xế**: Khi một tài xế chấp nhận yêu cầu, Dịch vụ Ghép Đôi sẽ nhận thông tin và tiếp tục gửi chi tiết chuyến đi đến Dịch vụ Quản Lý Chuyến Đi (Trip Management service).
+
+6. **Giám sát chuyến đi**: Dịch vụ Quản Lý Chuyến Đi sẽ theo dõi tiến trình của chuyến đi, đảm bảo mọi thứ diễn ra suôn sẻ. Họ cũng sẽ phát sóng vị trí của tài xế và hành khách cho tất cả các bên liên quan trong chuyến đi, giúp mọi người cập nhật thông tin về chuyến đi.
+
+Quy trình này giúp đảm bảo chuyến đi được an toàn, thuận tiện và phù hợp với nhu cầu của người dùng.
+
 ### 1. Thiết kế kiến trúc tổng quan
 
 Trước khi đi vào chi tiết, cần xác định một số thành phần chính của ứng dụng như sau:
