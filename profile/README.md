@@ -179,3 +179,32 @@ Repository cho tài liệu và các nội dung khác.
 
 Địa chỉ `git-repo-url` trong các ví dụ trên phải được thay thế bằng URL thực tế của mỗi repository trên server Git của bạn (ví dụ như GitHub, GitLab, Bitbucket, v.v.). Việc tổ chức này giúp dễ dàng quản lý, phát triển, và triển khai từng phần của hệ thống một cách độc lập.
 
+# CS / RS
+Dưới đây là bảng cấu trúc chi phí (Cost Structure) và dòng doanh thu (Revenue Stream) của Uber đã được cập nhật với các ghi chú tương ứng:
+
+### Cấu Trúc Chi Phí (Cost Structure)
+
+| **Hạng Mục**                       | **Mô Tả**                                                                 | **Ghi chú** |
+|------------------------------------|---------------------------------------------------------------------------|-------------|
+| Chi Phí Nghiên Cứu và Phát Triển   | Chi phí liên quan đến việc cải tiến ứng dụng, phát triển công nghệ mới.  | TBD         |
+| Chi Phí Marketing và Quảng Cáo     | Chi phí cho các chiến dịch quảng cáo, khuyến mãi, tiếp thị.              | TBD         |
+| Chi Phí Nhân Sự                    | Lương và phúc lợi cho nhân viên, bao gồm cả tài xế và nhân viên văn phòng.| TBD         |
+| Chi Phí Hạ Tầng                    | Chi phí duy trì và phát triển cơ sở hạ tầng công nghệ, máy chủ, trung tâm dữ liệu.| Không       |
+| Chi Phí Pháp Lý và Tuân Thủ        | Chi phí liên quan đến việc tuân thủ các quy định pháp luật, bảo hiểm.    | Không       |
+| Chi Phí Vận Hành                   | Chi phí liên quan đến hoạt động hàng ngày như hỗ trợ khách hàng, quản lý tài xế.| TBD         |
+| Chi Phí Khấu Hao và Bảo Trì        | Chi phí liên quan đến khấu hao và bảo trì tài sản cố định.                | TBD         |
+
+### Dòng Doanh Thu (Revenue Stream)
+
+| **Nguồn Doanh Thu**                | **Mô Tả**                                                                 | **Ghi chú** |
+|------------------------------------|---------------------------------------------------------------------------|-------------|
+| Phí Chuyến Đi                      | Phí nhận từ mỗi chuyến đi, gồm phần trăm của Uber từ tổng giá trị chuyến đi.| TBD         |
+| Phí Dịch Vụ Cao Cấp                | Doanh thu từ dịch vụ cao cấp như Uber Black, UberXL.                       | TBD         |
+| Phí Hủy Chuyến                     | Phí phạt khi khách hàng hủy chuyến sau khi đã đặt.                         | TBD         |
+| Phí Chờ                             | Phí tính thêm khi tài xế phải chờ đợi khách hàng lâu.                      | TBD         |
+| Quảng Cáo Trên Ứng Dụng            | Doanh thu từ quảng cáo trên ứng dụng Uber.                                | TBD         |
+| Quan Hệ Đối Tác và Liên Kết        | Doanh thu từ các chương trình hợp tác, liên kết với các công ty khác.     | TBD         |
+| Dịch Vụ Giao Hàng                  | Doanh thu từ dịch vụ giao hàng như Uber Eats.                             | TBD         |
+| Các Khoản Phụ Thu                  | Các khoản phụ thu khác như phí cầu đường, phí sân bay.                    | TBD         |
+
+Hy vọng bảng này cung cấp cái nhìn tổng quan về cấu trúc chi phí và dòng doanh thu của Uber với các ghi chú cập nhật!
